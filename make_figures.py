@@ -33,7 +33,7 @@ TIMESERIES_CSV = "timeseries.csv"
 SLICES = [(20, "tab:red"), (50, "tab:orange"), (80, "tab:blue")]   # sensor levels in the line plot
 COLLAPSE = 3      # tipping point = decoy share where mean bases destroyed first reaches 3 of 4
 REGIME_COLORS = ["tab:blue", "tab:orange", "tab:red", "tab:purple", "tab:gray"]   # one per decoy share, low to high
-REGIME_NAMES = {0: "holds", 16: "just below tipping", 36: "collapse", 68: "recovering", 84: "too few warheads"}
+REGIME_NAMES = {0: "holds", 16: "just below tipping", 36: "collapse", 68: "recovering", 84: "too few armed drones"}
 plt.rcParams.update({"font.size": 8})
 
 
@@ -174,7 +174,7 @@ for (decoy, runs), color in zip(sorted(regimes.items()), REGIME_COLORS):
     raining = statistics.mean(float(r["ifelse-value raining? [ 1 ] [ 0 ]"]) for r in rows)
     print(f"  {decoy:4g}% decoys: run {run} destroyed {final(run, 'bases-destroyed'):g} bases | "
           f"regime means: bases destroyed {statistics.mean(final(r, 'bases-destroyed') for r in runs):.2f}, "
-          f"warheads shot down {statistics.mean(final(r, 'lethal-shot-down') for r in runs):.1f}, "
+          f"armed drones shot down {statistics.mean(final(r, 'lethal-shot-down') for r in runs):.1f}, "
           f"decoys shot down {statistics.mean(final(r, 'decoys-shot-down') for r in runs):.1f} | "
           f"waves at {waves}, raining {raining:.0%} of this run")
 for w in waves:

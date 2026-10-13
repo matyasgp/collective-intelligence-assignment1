@@ -437,7 +437,7 @@ end]]></code>
   </widgets>
   <info>## WHAT IS IT?
 
-A model of an air defence being saturated by cheap decoy drones. For every wave, the attacker has a fixed budget and splits it between expensive lethal drones and cheap decoys. The bases defend themselves with interceptors, but each base has only a small magazine that reloads slowly, and its sensors cannot always tell a decoy from a real warhead.
+A model of a defence being saturated by cheap decoy drones. For every wave, the attacker has a fixed budget and splits it between expensive lethal drones and cheap decoys. The bases defend themselves with interceptors, but each base has only a small magazine that reloads slowly, and its sensors cannot always tell a decoy from an armed drone.
 
 **Why:** to find out how the share of the budget spent on decoys, together with the defender's ability to recognise decoys, decides whether the defence holds or collapses.
 

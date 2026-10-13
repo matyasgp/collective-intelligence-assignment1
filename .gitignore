@@ -8,12 +8,10 @@ Notes.md
 Assignment 1.pdf
 make_tipping_plots.py
 
-# Presentation: only the deck, its PDF and the demo video are published
+# Presentation folder: only the demo is published
 presentation/*
-!presentation/presentation.pptx
-!presentation/presentation.pdf
 !presentation/demo.mp4
-!presentation/demo_poster.png
+!presentation/demo.gif
 
 # LaTeX build artifacts
 latex/*.aux
