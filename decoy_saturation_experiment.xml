@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE experiments SYSTEM "behaviorspace.dtd">
+<experiments>
+  <experiment name="decoy-saturation-sweep" repetitions="100" sequentialRunOrder="false" runMetricsEveryStep="false" timeLimit="500">
+    <setup>setup</setup>
+    <go>go</go>
+    <metrics>
+      <metric>bases-destroyed</metric>
+      <metric>lethal-hits</metric>
+      <metric>lethal-shot-down</metric>
+      <metric>decoys-shot-down</metric>
+      <metric>ticks</metric>
+    </metrics>
+    <constants>
+      <steppedValueSet variable="decoy-ratio" first="0" step="2" last="100"/>
+      <steppedValueSet variable="sensor-discrimination" first="0" step="10" last="100"/>
+    </constants>
+  </experiment>
+  <experiment name="regime-timeseries" repetitions="20" sequentialRunOrder="false" runMetricsEveryStep="true" timeLimit="500">
+    <setup>setup</setup>
+    <go>go</go>
+    <metrics>
+      <metric>total-base-health</metric>
+      <metric>lethal-shot-down</metric>
+      <metric>decoys-shot-down</metric>
+      <metric>lethal-hits</metric>
+      <metric>bases-destroyed</metric>
+      <metric>wave</metric>
+      <metric>ifelse-value raining? [ 1 ] [ 0 ]</metric>
+    </metrics>
+    <constants>
+      <enumeratedValueSet variable="sensor-discrimination">
+        <value value="20"/>
+      </enumeratedValueSet>
+      <enumeratedValueSet variable="decoy-ratio">
+        <value value="0"/>
+        <value value="16"/>
+        <value value="36"/>
+        <value value="68"/>
+        <value value="84"/>
+      </enumeratedValueSet>
+    </constants>
+  </experiment>
+  <experiment name="ratio-sweep" repetitions="100" sequentialRunOrder="false" runMetricsEveryStep="false" timeLimit="500">
+    <setup>setup</setup>
+    <go>go</go>
+    <metrics>
+      <metric>bases-destroyed</metric>
+      <metric>lethal-hits</metric>
+    </metrics>
+    <constants>
+      <steppedValueSet variable="sensor-discrimination" first="0" step="10" last="100"/>
+      <enumeratedValueSet variable="decoy-ratio"><value value="0.0"/><value value="6.9767"/><value value="13.0435"/><value value="18.3673"/><value value="23.0769"/><value value="27.2727"/><value value="31.0345"/><value value="34.4262"/><value value="37.5"/><value value="40.2985"/><value value="42.8571"/><value value="45.2055"/><value value="47.3684"/><value value="49.3671"/><value value="51.2195"/><value value="52.9412"/><value value="54.5455"/><value value="56.044"/><value value="57.4468"/><value value="58.7629"/><value value="60.0"/><value value="61.165"/><value value="62.2642"/><value value="63.3028"/><value value="64.2857"/><value value="65.2174"/><value value="66.1017"/><value value="66.9421"/><value value="67.7419"/><value value="68.5039"/><value value="69.2308"/><value value="69.9248"/><value value="70.5882"/><value value="71.223"/><value value="71.831"/><value value="72.4138"/><value value="72.973"/><value value="73.5099"/><value value="74.026"/><value value="74.5223"/><value value="75.0"/><value value="75.4601"/><value value="75.9036"/><value value="76.3314"/><value value="76.7442"/><value value="77.1429"/><value value="77.5281"/><value value="77.9006"/><value value="78.2609"/><value value="78.6096"/><value value="78.9474"/><value value="79.2746"/><value value="79.5918"/><value value="79.8995"/><value value="80.198"/><value value="80.4878"/><value value="80.7692"/><value value="81.0427"/><value value="81.3084"/><value value="81.5668"/><value value="81.8182"/></enumeratedValueSet>
+    </constants>
+  </experiment>
+</experiments>

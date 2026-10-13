@@ -1,0 +1,27 @@
+# Local only: superseded files, calibration search, notes, hand-in folder
+old/
+exploration/
+figures/
+_LEAD/
+CLAUDE.md
+Notes.md
+Assignment 1.pdf
+make_tipping_plots.py
+
+# Presentation: only the deck, its PDF and the demo video are published
+presentation/*
+!presentation/presentation.pptx
+!presentation/presentation.pdf
+!presentation/demo.mp4
+!presentation/demo_poster.png
+
+# LaTeX build artifacts
+latex/*.aux
+latex/*.fdb_latexmk
+latex/*.fls
+latex/*.log
+latex/*.out
+latex/*.synctex.gz
+
+# Python
+__pycache__/
