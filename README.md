@@ -8,7 +8,7 @@ An agent-based NetLogo model of how cheap distractors can exhaust a limited, slo
 
 ## The story
 
-The setting is a tongue-in-cheek fictional one, *Sociodynamics of Emutopia and Kiwiland relations*. Emutopia keeps sending "airborne humanitarian food deliveries" to Kiwiland, which would rather not receive them. Each wave has a fixed budget. An armed drone costs 100, while a decoy costs 15 and does nothing. Kiwiland's bases fire interceptors at whatever drone they pick out on radar, and each base holds only a few interceptors, which reload slowly.
+The setting: *Sociodynamics of Emutopia and Kiwiland relations*. Emutopia keeps sending "airborne humanitarian food deliveries" to Kiwiland, which would rather not receive them. Each wave has a fixed budget. An armed drone costs 100, while a decoy costs 15 and does nothing. Kiwiland's bases fire interceptors at whatever drone they pick out on radar, and each base holds only a few interceptors, which reload slowly.
 
 **Research question:** how do the decoy share of the budget and the defender's ability to recognise decoys decide whether the defence holds?
 
@@ -79,10 +79,11 @@ This is an abstract educational model. It uses no real-world system data and doe
 - Both sides follow simple fixed tactics, and neither adapts.
 - Bases do not share interceptors.
 - Costs and magazine sizes are stylised. The exact percentages are not real-world numbers. The result is the shape of the transition.
+- and much much more
 
 ## Acknowledgements
 
-Made for Assignment 1 of *Collective Intelligence* at ELTE Faculty of Informatics. Partly inspired by Perun's YouTube presentations.
+Made for Assignment 1 of *Collective Intelligence* at ELTE Faculty of Informatics. Inspired by Perun's YouTube presentations.
 
 ## License
 
